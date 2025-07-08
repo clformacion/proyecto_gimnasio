@@ -16,7 +16,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-         <script src="programacion/js/calculo.js"></script>
+         <script src="programacion/js/js.js"></script>
     </head>
 +
     <body>
@@ -109,85 +109,145 @@
                 <h1 style="font-size: 50px;">Gimnasio Salud Madrid</h1>
             </blockquote>
               <!-- Modal trigger button -->
-              <button
-                type="button"
-                class="btn btn-primary btn-lg"
-                data-bs-toggle="modal"
-                data-bs-target="#modalId"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cake2-fill" viewBox="0 0 16 16">
+              
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cake2-fill" viewBox="0 0 16 16">
   <path d="m2.899.804.595-.792.598.79A.747.747 0 0 1 4 1.806v4.886q-.532-.09-1-.201V1.813a.747.747 0 0 1-.1-1.01ZM13 1.806v4.685a15 15 0 0 1-1 .201v-4.88a.747.747 0 0 1-.1-1.007l.595-.792.598.79A.746.746 0 0 1 13 1.806m-3 0a.746.746 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v5.17q.512-.02 1-.055zm-3 0v5.176q-.512-.018-1-.054V1.813a.747.747 0 0 1-.1-1.01l.595-.79.598.789A.747.747 0 0 1 7 1.806"/>
   <path d="M4.5 6.988V4.226a23 23 0 0 1 1-.114V7.16c0 .131.101.24.232.25l.231.017q.498.037 1.02.055l.258.01a.25.25 0 0 0 .26-.25V4.003a29 29 0 0 1 1 0V7.24a.25.25 0 0 0 .258.25l.259-.009q.52-.018 1.019-.055l.231-.017a.25.25 0 0 0 .232-.25V4.112q.518.047 1 .114v2.762a.25.25 0 0 0 .292.246l.291-.049q.547-.091 1.033-.208l.192-.046a.25.25 0 0 0 .192-.243V4.621c.672.184 1.251.409 1.677.678.415.261.823.655.823 1.2V13.5c0 .546-.408.94-.823 1.201-.44.278-1.043.51-1.745.696-1.41.376-3.33.603-5.432.603s-4.022-.227-5.432-.603c-.702-.187-1.305-.418-1.745-.696C.408 14.44 0 14.046 0 13.5v-7c0-.546.408-.94.823-1.201.426-.269 1.005-.494 1.677-.678v2.067c0 .116.08.216.192.243l.192.046q.486.116 1.033.208l.292.05a.25.25 0 0 0 .291-.247M1 8.82v1.659a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426V8.833l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277z"/>
+</svg>  DESCUBRE TU REGALO</button>
+             <!-- ========== Start modal ========== -->
+
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cake2-fill" viewBox="0 0 16 16">
+  <path d="m2.899.804.595-.792.598.79A.747.747 0 0 1 4 1.806v4.886q-.532-.09-1-.201V1.813a.747.747 0 0 1-.1-1.01ZM13 1.806v4.685a15 15 0 0 1-1 .201v-4.88a.747.747 0 0 1-.1-1.007l.595-.792.598.79A.746.746 0 0 1 13 1.806m-3 0a.746.746 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v5.17q.512-.02 1-.055zm-3 0v5.176q-.512-.018-1-.054V1.813a.747.747 0 0 1-.1-1.01l.595-.79.598.789A.747.747 0 0 1 7 1.806"/>
+  <path d="M4.5 6.988V4.226a23 23 0 0 1 1-.114V7.16c0 .131.101.24.232.25l.231.017q.498.037 1.02.055l.258.01a.25.25 0 0 0 .26-.25V4.003a29 29 0 0 1 1 0V7.24a.25.25 0 0 0 .258.25l.259-.009q.52-.018 1.019-.055l.231-.017a.25.25 0 0 0 .232-.25V4.112q.518.047 1 .114v2.762a.25.25 0 0 0 .292.246l.291-.049q.547-.091 1.033-.208l.192-.046a.25.25 0 0 0 .192-.243V4.621c.672.184 1.251.409 1.677.678.415.261.823.655.823 1.2V13.5c0 .546-.408.94-.823 1.201-.44.278-1.043.51-1.745.696-1.41.376-3.33.603-5.432.603s-4.022-.227-5.432-.603c-.702-.187-1.305-.418-1.745-.696C.408 14.44 0 14.046 0 13.5v-7c0-.546.408-.94.823-1.201.426-.269 1.005-.494 1.677-.678v2.067c0 .116.08.216.192.243l.192.046q.486.116 1.033.208l.292.05a.25.25 0 0 0 .291-.247M1 8.82v1.659a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426V8.833l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277z"/>
+</svg> FELICIDADES</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+        <img
+          src="3.png"
+          class="img-fluid rounded-top"
+          alt=""
+        />
+        <button type="button" onclick="regalo()" class="btn btn-danger">Cuanto regalos deseas</button>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Aceptar tu regalo</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
 </svg>
-   DESCUBRE TU REGALO
-              </button>
-              
-              <!-- Modal Body -->
-              <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-              <div
-                class="modal fade"
-                id="modalId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-              >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Modal title
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">
-
-                        <a
-                          name=""
-                          id=""
-                          class="btn btn-primary"
-                     
-                          role="button"
-                          onclick="oferta()"
-                          >ABRE TU SORPRESA</a
-                        >
-                        
 
 
-                        </div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
-                    </div>
-                </div>
-              </div>
+
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="imprimir">
+      
+     
+      <div
+        class="container"
+      >
+       
+      <div
+        class="table-responsive"
+      >
+      <div id="areaImprimir">
+        <table
+          class="table table-striped  table-borderless table-primary align-middle"
+        >
+          <thead class="table-light">
+            <caption>
+              <h2>Felicidades: <h3 id="demo6" ></h3><h3 id="demo7" style="margin-left: 10px;"></h3></h2>
+              <h5 style="background-color: yellow;">Regalo par el portador</h5>
+            </caption>
+            <tr>
+              <th>N#PX</th>
+              <th>Costo</th>
+              <th>Total</th>
+              <th>Tu Regalo</th>
+              <th>Pagar</th>
+
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr
+              class="table-primary"
+            >
               
-              <!-- Optional: Place to the bottom of scripts -->
-              <script>
-                const myModal = new bootstrap.Modal(
-                    document.getElementById("modalId"),
-                    options,
-                );
-              </script>
-              
+              <td id="demo"></td>
+              <td id="demo2"></td>
+              <td id="demo3"></td>
+              <td id="demo4"></td>
+              <td id="demo5" style="color: red; background-color: yellow;"></td>
+
+            </tr>
+            
+          </tbody>
+          <tfoot>
+            
+          </tfoot>
+        </table>
+</div>
+  <button class="btn btn-primary"  data-bs-toggle="modal" onclick="printDiv('areaImprimir')" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+</svg> Imprimir</button>
+
+      </div>
+      
+
+
+
+
+      </div>
+      
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <!--button class="btn btn-primary"  data-bs-toggle="modal" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+</svg> Imprimir</button-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+             
+             <!-- ========== End modal ========== -->
+             
 
          </figure>
          
@@ -221,7 +281,7 @@
             </p>
               
                <a
-                name= g""
+                name= ""
                 id=""
                 class="btn btn-warning"
                 role="button"
@@ -249,15 +309,6 @@
           </figure>
           
            
-              
-
-
-
-
-
-
-
-
             </div>
             <div class="col-sm-6">
               <img
@@ -267,25 +318,10 @@
               />
               
 
-
-
             </div>
            
            </div>
            
-
-
-
-
-
-
-
-
-
-
-
-
-
            </div>
            
 
@@ -296,13 +332,23 @@
 
 
 
-         <!-- ========== End II Container ========== -->
+         <!-- ========== LEER SOLO UN DIV ========== -->
+<script>
+function printDiv(nombreDiv) {
+     var contenido= document.getElementById(nombreDiv).innerHTML;
+     var contenidoOriginal= document.body.innerHTML;
+
+     document.body.innerHTML = contenido;
+
+     window.print();
+
+     document.body.innerHTML = contenidoOriginal;
+}
+</script>
 
 
 
 
-
-<h1 id="demo"></h1>
 
 
 
